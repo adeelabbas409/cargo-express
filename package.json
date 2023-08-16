@@ -1,6 +1,6 @@
 {
-  "name": "cargo-design-system",
-  "description": "A quick library starter for React with Tailwind CSS, Vite, TypeScript and Shadcn-ui components.",
+  "name": "cargo-express",
+  "description": "Cargo-Express library starter for React with Tailwind CSS, Vite, TypeScript and Shadcn-ui components.",
   "private": false,
   "version": "1.0.3",
   "type": "module",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/adeelabbas409/cargo-ui"
+    "url": "https://github.com/adeelabbas409/cargo-express"
   },
   "scripts": {
     "dev": "vite",
