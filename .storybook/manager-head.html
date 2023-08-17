@@ -1,0 +1,15 @@
+<title>CARGO</title>
+<link rel="icon" type="image/png" href="https://user-images.githubusercontent.com/22587122/189134363-e0e6cd05-f5af-49e9-827b-c35ec797439e.svg" sizes="192x192">
+
+<!--  setting story page title  -->
+<script>
+    var observer = new MutationObserver(function(mutations) {
+      if (document.title.match(/Storybook$/)) {
+        document.title = "CARGO Design System";
+      }
+    }).observe(document.querySelector("title"), {
+      childList: true,
+      subtree: true,
+      characterData: true
+    });
+</script>

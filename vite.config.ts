@@ -2,7 +2,7 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
-import { dependencies, peerDependencies } from './package.json';
+import { dependencies } from './package.json';
 
 export default defineConfig({
   plugins: [
@@ -20,7 +20,7 @@ export default defineConfig({
       fileName: (ext) => `index.${ext}.js`,
     },
     rollupOptions: {
-      external: [...Object.keys(peerDependencies), ...Object.keys(dependencies)], output: { preserveModules: true, exports: 'named' }
+      external: [ ...Object.keys(dependencies)], output: { preserveModules: true, exports: 'named' }
     },
     
     target: 'esnext',
